@@ -1,0 +1,59 @@
+body_1{
+   
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-around;
+
+}
+body{
+    /* display: flex; */
+    text-align: center;
+   
+}
+
+tbody{
+    
+    text-align: center;
+}
+th{
+    background-color: aquamarine;
+}
+table, th, td {
+    flex-wrap: wrap;
+    border:1px solid black;
+    border-collapse: collapse;
+    margin:auto;
+    height: 0.5px 0.5px;
+    /* border:1px solid black; */
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    padding: 1rem;
+   
+   
+    
+    
+}
+
+
+ul{
+    list-style-type:none;
+}
+a{   
+    color: black;
+    text-decoration: none;
+}
+button,select{
+    padding: 1rem;
+}
+.order{
+    width: 100%;
+    /* margin:auto;
+         height: 0.5px 0.5px; */
+}
+img{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+bottom: 100px; left: 130px;
+}
