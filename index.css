@@ -1,20 +1,21 @@
 body_1{
    
-    display: flex;
-   
+    display: flexbox;
+    
     align-items: center;
     justify-content: space-around;
 
 }
 body{
-    /* display: flex; */
+    display: flexbox;
     text-align: center;
    
 }
 
 tbody{
-    
-    text-align: center;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* text-align: center; */
 }
 th{
     background-color: aquamarine;
@@ -51,9 +52,9 @@ button,select{
     /* margin:auto;
          height: 0.5px 0.5px; */
 }
-img{
-    display: flex;
-    flex-wrap: wrap;
-    position: fixed;
-bottom: 100px; left: 130px;
+#img{
+    /* display: flex;
+    flex-wrap: wrap; */
+   text-align: center;
+/* bottom: 100px; left: 130px; */
 }

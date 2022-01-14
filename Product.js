@@ -18,7 +18,7 @@ console.log(PageProduct);
 
 const Page_Display_Client = `
 
-<img src=${IDProduct.Photo} width=20%></img>
+<img id="img" src=${IDProduct.Photo} width=20%></img>
 
 <table class="order">
 <tr>
