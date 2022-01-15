@@ -39,10 +39,10 @@ const Page_Display_Client = `
 <td data-label=${IDProduct.Price}>${IDProduct.Price}₪</td>
 <td data-label=${IDProduct.qte}>${IDProduct.qte}</td>
 <td data-label=${IDProduct.Note}>${IDProduct.Note}</td>
-<td><button id="btn_send" type="submit" name="btn_send" >Add to the cart</button></td>
-<td><select name="option_product" id="option_product">
-<option value="MP3">option MP3 ${IDProduct.Price}₪</option>
-<option value="MP4">option MP4 </option>
+<td><button id="btn_send" type="submit" name="btn_send" onchange="onchangeSelect()"  >Add to the cart</button></td>
+<td><select name="option_product" id="option_product" onchange="onchangeSelect()">
+<option value="MP3">option MP3 </option>
+<option value="MP4">option MP4  </option>
 <option value="Ipod">option Ipod </option>
 <option value="Iphone">option Iphone </option>
 <option value="Radio">option Radio </option>
@@ -75,7 +75,7 @@ const Select_option = idForm.value
         let optionValu = {
             Name:IDProduct.Name,
             ID_Product:IDProduct._id,
-            option_product:Select_option,
+            option_product:IDProduct.Item,
             Price:IDProduct.Price,
             qte:1,
         }
@@ -87,7 +87,7 @@ const Select_option = idForm.value
         let ProductStorage = JSON.parse(localStorage.getItem("product"))
         
     const popupConf=()=>{
-       if(window.confirm(`${IDProduct.Name} option ${Select_option} add to the cart`)){
+       if(window.confirm(`${IDProduct.Name} option ${IDProduct.Item} price ${IDProduct.Price}  add to the cart`)){
     window.location.href= "cart.html" 
        }else{
         window.location.href= "index.html" 
@@ -107,9 +107,9 @@ const Select_option = idForm.value
         }
      })
 
-  
-    
+//--------------------------------Display the new Product Cart with onchange="changeSoption()"------------------------>
 
-
-
-
+// const onchangeSelect = ()=>{
+//     const OnChangeSelect= document.getElementById("option_product").value
+// //  document.getElementById("review").innerHTML = OnChangeSelect;
+// }

@@ -21,7 +21,7 @@ let ProductCart = [];
         <tr>
         
         <div class="container review">
-        <th><div>${ProductStorage[j].Name} </div><div>Quantity 1 -Product:${ProductStorage[j].option_product}</div></th>
+        <th><div id="review" >${ProductStorage[j].Name} </div><div>Quantity 1 -Product:${ProductStorage[j].option_product}</div></th>
         <th><div>${ProductStorage[j].Price}₪- <button class="btn_delete" >Delete Item</button> </div></th>
 
     </div>
@@ -54,6 +54,4 @@ for(let k=0; k < btn_delete.length;k++){
     })
 
 }
-//--------------------------------Display the new Product Cart with onchange="changeSoption()"------------------------>
-
 
