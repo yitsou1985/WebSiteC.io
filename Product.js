@@ -39,7 +39,7 @@ const Page_Display_Client = `
 <td data-label=${IDProduct.Price}>${IDProduct.Price}₪</td>
 <td data-label=${IDProduct.qte}>${IDProduct.qte}</td>
 <td data-label=${IDProduct.Note}>${IDProduct.Note}</td>
-<td><button id="btn_send" type="submit" name="btn_send" onchange="onchangeSelect()"  >Add to the cart</button></td>
+<td><button id="btn_send" type="submit" name="btn_send">Add to the cart</button></td>
 <td><select name="option_product" id="option_product" onchange="onchangeSelect()">
 <option value="MP3">option MP3 </option>
 <option value="MP4">option MP4  </option>
@@ -110,6 +110,10 @@ const Select_option = idForm.value
 //--------------------------------Display the new Product Cart with onchange="changeSoption()"------------------------>
 
 // const onchangeSelect = ()=>{
-//     const OnChangeSelect= document.getElementById("option_product").value
-// //  document.getElementById("review").innerHTML = OnChangeSelect;
+//     const OnChangeSelect= document.getElementById("option_product").value;
+//     console.log(OnChangeSelect);
+//          const Change = document.getElementById("review")
+//          console.log(Change);
+         
+//         //  Change.innerHTML = OnChangeSelect;
 // }
