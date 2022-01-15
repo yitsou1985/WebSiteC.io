@@ -39,13 +39,13 @@ const DisplayProduct=(order)=>{
                         <th>Note</th>
                         <th>Order</th>
                         <tr>
-                        <td>${_Id[i]}</td>
-                        <td>${NAME[i]}</td> 
-                        <td>${ADRESS[i]}</td>
-                        <td>${ITEM[i]}</td>
-                        <td>${PRICE[i]}₪</td>
-                        <td>${QTE[i]}</td>
-                        <td>${NOTE[i]}</td>
+                        <td data-label=ID>${_Id[i]}</td>
+                        <td data-label=Name>${NAME[i]}</td> 
+                        <td data-label=Adress>${ADRESS[i]}</td>
+                        <td data-label=Item>${ITEM[i]}</td>
+                        <td data-label=Price>${PRICE[i]}₪</td>
+                        <td data-label=Qte>${QTE[i]}</td>
+                        <td data-label=Note>${NOTE[i]}</td>
                           <td><button><a href="Product.html?${_Id[i]}">Click</button></a></td>
                         
                         </tr>

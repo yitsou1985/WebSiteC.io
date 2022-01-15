@@ -1,6 +1,5 @@
 body_1{
    
-    display: flexbox;
     
     align-items: center;
     justify-content: space-around;
@@ -11,31 +10,24 @@ body{
     text-align: center;
    
 }
-
-tbody{
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* text-align: center; */
+*{
+    box-sizing: border-box;
 }
+table{
+    width: 10rem;
+    border-collapse: collapse;
+}
+table td, table th{
+    padding: 1.2em 1.5rem ;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
+
 th{
     background-color: aquamarine;
 }
-table, th, td {
-    flex-wrap: wrap;
-    border:1px solid black;
-    border-collapse: collapse;
-    margin:auto;
-    height: 0.5px 0.5px;
-    /* border:1px solid black; */
-    border: 2px solid rgb(200, 200, 200);
-    letter-spacing: 1px;
-    padding: 1rem;
-   
-   
-    
-    
-}
-
 
 ul{
     list-style-type:none;
@@ -49,12 +41,20 @@ button,select{
 }
 .order{
     width: 100%;
-    /* margin:auto;
-         height: 0.5px 0.5px; */
+    
 }
 #img{
-    /* display: flex;
-    flex-wrap: wrap; */
+    
    text-align: center;
-/* bottom: 100px; left: 130px; */
+
 }
+
+@media only screen and (max-width:700px){
+    table,thead,tbody,tr,th,td{
+        display: block;
+    }
+}
+
+
+
+

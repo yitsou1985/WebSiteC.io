@@ -32,13 +32,13 @@ const Page_Display_Client = `
 <th>Note</th>
 <th>Order</th>
 <tr>
-<td>${IDProduct._id}</td>
-<td>${IDProduct.Name}</td> 
-<td>${IDProduct.Adress}</td>
-<td>${IDProduct.Item}</td>
-<td>${IDProduct.Price}₪</td>
-<td>${IDProduct.qte}</td>
-<td>${IDProduct.Note}</td>
+<td data-label=${IDProduct._id}>${IDProduct._id}</td>
+<td data-label=${IDProduct.Name}>${IDProduct.Name}</td> 
+<td data-label=${IDProduct.Adress}>${IDProduct.Adress}</td>
+<td data-label=${IDProduct.Item}>${IDProduct.Item}</td>
+<td data-label=${IDProduct.Price}>${IDProduct.Price}₪</td>
+<td data-label=${IDProduct.qte}>${IDProduct.qte}</td>
+<td data-label=${IDProduct.Note}>${IDProduct.Note}</td>
 <td><button id="btn_send" type="submit" name="btn_send" >Add to the cart</button></td>
 <td><select name="option_product" id="option_product">
 <option value="MP3">option MP3 ${IDProduct.Price}₪</option>
